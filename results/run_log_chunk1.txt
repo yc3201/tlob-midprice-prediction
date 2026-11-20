@@ -1,0 +1,45 @@
+=== chunk 1 started Fri Nov 20 03:56:38 UTC 2026 ===
+=== eval killed DeepLOB h=100 checkpoint (epoch 5) ===
+model=deeplob h=100 labels=classic seq=100 feats=40 stride=10 split=standard epochs=10 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+CHECKPOINT TEST macro F1 0.6264 per-class [0.6123, 0.6827, 0.5842] acc 0.6277
+saved results/deeplob_h100_seq100_f40_standard_10ep_partial-eval.json + deeplob_h100_seq100_f40_standard_10ep_partial-eval_test_preds.npz
+=== trading check: TLOB h=100 10ep ===
+tlob_h100_seq128_f40_standard_10ep_test_preds.npz: macro F1 0.5464 | spread proxy 0.00143 z | flip-rule model: 4975 trades, gross -0.272z, net -7.409z, win 0.17 | flip-rule oracle net -4.686z (4025 trades) | hold-10 model net -8.330z (5724 trades), oracle net -6.969z (5193 trades) | B&H +0.410z | signals below spread: 0.81 (n=10303)
+saved results/trading_h100_10ep_tlob.json
+=== deeplob_h100_seq100_f40_standard_10ep 03:58:31 ===
+model=deeplob h=100 labels=classic seq=100 feats=40 stride=10 split=standard epochs=10 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+epoch 0: train_loss=1.0303 val_macro_f1=0.2078 val_loss=1.0953 (314s elapsed)
+epoch 1: train_loss=0.9317 val_macro_f1=0.3073 val_loss=1.0979 (833s elapsed)
+epoch 2: train_loss=0.8172 val_macro_f1=0.3250 val_loss=1.0944 (1455s elapsed)
+epoch 3: train_loss=0.7467 val_macro_f1=0.5017 val_loss=0.9875 (2553s elapsed)
+epoch 4: train_loss=0.6933 val_macro_f1=0.4062 val_loss=0.9793 (2789s elapsed)
+epoch 5: train_loss=0.6551 val_macro_f1=0.5866 val_loss=0.8831 (2982s elapsed)
+epoch 6: train_loss=0.6242 val_macro_f1=0.5824 val_loss=0.8586 (3190s elapsed)
+epoch 7: train_loss=0.5985 val_macro_f1=0.6018 val_loss=0.8439 (3402s elapsed)
+epoch 8: train_loss=0.5741 val_macro_f1=0.6120 val_loss=0.8282 (3603s elapsed)
+epoch 9: train_loss=0.5540 val_macro_f1=0.6140 val_loss=0.8190 (3804s elapsed)
+best val macro F1 0.6140 at epoch 9
+TEST macro F1 0.7140 per-class [0.67, 0.7905, 0.6814] acc 0.7162
+saved results/deeplob_h100_seq100_f40_standard_10ep.json + deeplob_h100_seq100_f40_standard_10ep_test_preds.npz
+=== deeplob_h50_seq100_f40_standard_10ep 05:03:42 ===
+model=deeplob h=50 labels=classic seq=100 feats=40 stride=10 split=standard epochs=10 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+epoch 0: train_loss=1.0886 val_macro_f1=0.2978 val_loss=1.1072 (167s elapsed)
+epoch 1: train_loss=1.0620 val_macro_f1=0.3026 val_loss=1.0986 (350s elapsed)
+epoch 2: train_loss=0.9837 val_macro_f1=0.3774 val_loss=1.0906 (537s elapsed)
+epoch 3: train_loss=0.8918 val_macro_f1=0.3880 val_loss=1.0557 (717s elapsed)
+epoch 4: train_loss=0.8411 val_macro_f1=0.4857 val_loss=1.0055 (908s elapsed)
+epoch 5: train_loss=0.7919 val_macro_f1=0.4129 val_loss=0.9737 (1101s elapsed)
+epoch 6: train_loss=0.7535 val_macro_f1=0.5155 val_loss=0.9203 (1286s elapsed)
+epoch 7: train_loss=0.7237 val_macro_f1=0.4138 val_loss=0.9982 (1467s elapsed)
+epoch 8: train_loss=0.6983 val_macro_f1=0.3527 val_loss=1.0985 (1648s elapsed)
+epoch 9: train_loss=0.6563 val_macro_f1=0.5162 val_loss=0.8996 (1834s elapsed)
+best val macro F1 0.5162 at epoch 9
+TEST macro F1 0.6336 per-class [0.529, 0.8002, 0.5715] acc 0.6689
+saved results/deeplob_h50_seq100_f40_standard_10ep.json + deeplob_h50_seq100_f40_standard_10ep_test_preds.npz
+=== CHUNK 1 DONE Fri Nov 20 05:36:00 UTC 2026 ===

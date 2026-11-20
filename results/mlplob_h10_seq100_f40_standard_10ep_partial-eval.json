@@ -1,0 +1,26 @@
+{
+  "model": "mlplob",
+  "horizon": 10,
+  "labels": "classic",
+  "seq_size": 100,
+  "n_features": 40,
+  "stride": 10,
+  "split": "standard",
+  "epochs": 10,
+  "batch": 32,
+  "test": {
+    "macro_f1": 0.7796705655694671,
+    "per_class_f1": [
+      0.7215789473684211,
+      0.909135059006362,
+      0.7082976903336184
+    ],
+    "accuracy": 0.8583410997204101,
+    "loss": 0.4193276270813898,
+    "n": 13949
+  },
+  "test_windows": 13949,
+  "evaluated_from_checkpoint": "results/mlplob_h10_seq100_f40_standard_10ep_best.pt",
+  "best_val_macro_f1": 0.7730332891634474,
+  "best_epoch": 8
+}

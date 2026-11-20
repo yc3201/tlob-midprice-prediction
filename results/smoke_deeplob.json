@@ -1,0 +1,32 @@
+{
+  "model": "deeplob",
+  "horizon": 100,
+  "seq_size": 100,
+  "n_features": 40,
+  "stride": 500,
+  "split": "standard",
+  "epochs": 1,
+  "batch": 32,
+  "lr": 0.01,
+  "adam_eps": 1.0,
+  "ema": true,
+  "seed": 1,
+  "n_params": 143907,
+  "train_windows": 408,
+  "val_windows": 102,
+  "test_windows": 279,
+  "best_val_macro_f1": 0.19444444444444445,
+  "best_epoch": 0,
+  "test": {
+    "macro_f1": 0.161231884057971,
+    "per_class_f1": [
+      0.0,
+      0.0,
+      0.483695652173913
+    ],
+    "accuracy": 0.31899641577060933,
+    "loss": 1.114586313565572,
+    "n": 279
+  },
+  "seconds": 6.5
+}

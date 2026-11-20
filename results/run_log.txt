@@ -1,0 +1,31 @@
+=== tlob h=100 21:07:23 ===
+model=tlob h=100 seq=100 feats=40 stride=10 split=standard epochs=3 lr=0.0001
+windows: train=20371 val=5086 test=13949
+params: 579739
+epoch 0: train_loss=1.0426 val_macro_f1=0.2596 val_loss=1.0887 (647s elapsed)
+epoch 1: train_loss=1.0142 val_macro_f1=0.2829 val_loss=1.0857 (995s elapsed)
+epoch 2: train_loss=0.9776 val_macro_f1=0.3106 val_loss=1.0948 (1354s elapsed)
+best val macro F1 0.3106 at epoch 2
+TEST macro F1 0.2853 per-class [0.4137, 0.0013, 0.4409] acc 0.3547
+saved results/tlob_h100_seq100_f40_standard.json + tlob_h100_seq100_f40_standard_test_preds.npz
+=== deeplob h=100 21:32:20 ===
+model=deeplob h=100 seq=100 feats=40 stride=10 split=standard epochs=3 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+epoch 0: train_loss=1.0303 val_macro_f1=0.2078 val_loss=1.0953 (174s elapsed)
+epoch 1: train_loss=0.9317 val_macro_f1=0.3073 val_loss=1.0979 (349s elapsed)
+epoch 2: train_loss=0.8172 val_macro_f1=0.3250 val_loss=1.0944 (511s elapsed)
+best val macro F1 0.3250 at epoch 2
+TEST macro F1 0.3533 per-class [0.4497, 0.1105, 0.4998] acc 0.4122
+saved results/deeplob_h100_seq100_f40_standard.json + deeplob_h100_seq100_f40_standard_test_preds.npz
+=== tlob h=50 21:42:37 ===
+ feats=40 stride=10 split=standard epochs=3 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+epoch 0: train_loss=1.0303 val_macro_f1=0.2078 val_loss=1.0953 (174s elapsed)
+epoch 1: train_loss=0.9317 val_macro_f1=0.3073 val_loss=1.0979 (349s elapsed)
+epoch 2: train_loss=0.8172 val_macro_f1=0.3250 val_loss=1.0944 (511s elapsed)
+best val macro F1 0.3250 at epoch 2
+TEST macro F1 0.3533 per-class [0.4497, 0.1105, 0.4998] acc 0.4122
+saved results/deeplob_h100_seq100_f40_standard.json + deeplob_h100_seq100_f40_standard_test_preds.npz
+=== tlob h=50 21:42:37 ===

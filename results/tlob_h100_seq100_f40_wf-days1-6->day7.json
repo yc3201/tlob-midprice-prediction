@@ -1,0 +1,33 @@
+{
+  "model": "tlob",
+  "horizon": 100,
+  "labels": "classic",
+  "seq_size": 100,
+  "n_features": 40,
+  "stride": 10,
+  "split": "wf-days1-6->day7",
+  "epochs": 3,
+  "batch": 32,
+  "lr": 0.0001,
+  "adam_eps": 1e-08,
+  "ema": true,
+  "seed": 1,
+  "n_params": 579739,
+  "train_windows": 19642,
+  "val_windows": 2174,
+  "test_windows": 3630,
+  "best_val_macro_f1": 0.3212162155874731,
+  "best_epoch": 2,
+  "test": {
+    "macro_f1": 0.2986181986511505,
+    "per_class_f1": [
+      0.482739420935412,
+      0.005847953216374269,
+      0.4072672218016654
+    ],
+    "accuracy": 0.3878787878787879,
+    "loss": 1.1222372154394786,
+    "n": 3630
+  },
+  "seconds": 980.4
+}

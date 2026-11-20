@@ -1,0 +1,37 @@
+=== chunk 2b started Fri Nov 20 05:58:00 UTC 2026 ===
+=== eval killed DeepLOB h=20 checkpoint (epoch 0) ===
+model=deeplob h=20 labels=classic seq=100 feats=40 stride=10 split=standard epochs=10 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+CHECKPOINT TEST macro F1 0.3195 per-class [0.07, 0.7146, 0.1739] acc 0.5505
+saved results/deeplob_h20_seq100_f40_standard_10ep_partial-eval.json + deeplob_h20_seq100_f40_standard_10ep_partial-eval_test_preds.npz
+=== deeplob_h20_seq100_f40_standard_10ep 05:59:36 ===
+model=deeplob h=20 labels=classic seq=100 feats=40 stride=10 split=standard epochs=10 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+epoch 0: train_loss=1.0529 val_macro_f1=0.2853 val_loss=1.0797 (159s elapsed)
+epoch 1: train_loss=1.0344 val_macro_f1=0.2298 val_loss=1.0254 (336s elapsed)
+epoch 2: train_loss=1.0312 val_macro_f1=0.2298 val_loss=1.0236 (501s elapsed)
+epoch 3: train_loss=1.0231 val_macro_f1=0.2301 val_loss=1.0334 (669s elapsed)
+epoch 4: train_loss=1.0175 val_macro_f1=0.2298 val_loss=1.0176 (851s elapsed)
+epoch 5: train_loss=1.0078 val_macro_f1=0.2298 val_loss=1.0179 (1029s elapsed)
+epoch 6: train_loss=1.0011 val_macro_f1=0.2298 val_loss=1.0244 (1209s elapsed)
+epoch 7: train_loss=0.9804 val_macro_f1=0.2298 val_loss=1.0396 (1396s elapsed)
+epoch 8: train_loss=0.9680 val_macro_f1=0.2304 val_loss=1.0186 (1573s elapsed)
+epoch 9: train_loss=0.9457 val_macro_f1=0.2360 val_loss=1.0070 (1767s elapsed)
+best val macro F1 0.2853 at epoch 0
+TEST macro F1 0.3195 per-class [0.07, 0.7146, 0.1739] acc 0.5505
+saved results/deeplob_h20_seq100_f40_standard_10ep.json + deeplob_h20_seq100_f40_standard_10ep_test_preds.npz
+=== deeplob_h10_seq100_f40_standard_10ep 06:30:38 ===
+model=deeplob h=10 labels=classic seq=100 feats=40 stride=10 split=standard epochs=10 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+epoch 0: train_loss=0.9668 val_macro_f1=0.2933 val_loss=1.0814 (182s elapsed)
+epoch 1: train_loss=0.9350 val_macro_f1=0.2582 val_loss=0.9442 (387s elapsed)
+epoch 2: train_loss=0.9303 val_macro_f1=0.2582 val_loss=0.9295 (625s elapsed)
+epoch 3: train_loss=0.9252 val_macro_f1=0.2582 val_loss=0.9232 (920s elapsed)
+epoch 4: train_loss=0.9186 val_macro_f1=0.2582 val_loss=0.9152 (1144s elapsed)
+epoch 5: train_loss=0.9100 val_macro_f1=0.2582 val_loss=0.9226 (1536s elapsed)
+epoch 6: train_loss=0.9022 val_macro_f1=0.2582 val_loss=0.9098 (1775s elapsed)
+epoch 7: train_loss=0.8933 val_macro_f1=0.2582 val_loss=0.9092 (1950s elapsed)
+epoch 8: train_loss=0.8846 val_macro_f1=0.2582 val_loss=0.9194 (2268s elapsed)

@@ -1,0 +1,26 @@
+{
+  "model": "deeplob",
+  "horizon": 100,
+  "labels": "classic",
+  "seq_size": 100,
+  "n_features": 40,
+  "stride": 10,
+  "split": "standard",
+  "epochs": 10,
+  "batch": 32,
+  "test": {
+    "macro_f1": 0.6264103299858189,
+    "per_class_f1": [
+      0.612323081834628,
+      0.6827092625246344,
+      0.5841986455981941
+    ],
+    "accuracy": 0.6277152484049036,
+    "loss": 0.8238048636175077,
+    "n": 13949
+  },
+  "test_windows": 13949,
+  "evaluated_from_checkpoint": "results/deeplob_h100_seq100_f40_standard_10ep_best.pt",
+  "best_val_macro_f1": 0.5865765496817085,
+  "best_epoch": 5
+}

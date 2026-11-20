@@ -1,0 +1,72 @@
+=== wf + convergence runs started Thu Nov 19 23:38:24 UTC 2026 ===
+=== tlob_h100_seq100_f40_wf-days1-4->day5 23:38:24 ===
+model=tlob h=100 seq=100 feats=40 stride=10 split=wf-days1-4->day5 epochs=3 lr=0.0001
+windows: train=13092 val=1446 test=3630
+params: 579739
+epoch 0: train_loss=1.0199 val_macro_f1=0.2682 val_loss=1.0863 (232s elapsed)
+epoch 1: train_loss=0.9843 val_macro_f1=0.2954 val_loss=1.0558 (579s elapsed)
+epoch 2: train_loss=0.9599 val_macro_f1=0.3305 val_loss=1.0362 (1062s elapsed)
+best val macro F1 0.3305 at epoch 2
+TEST macro F1 0.3035 per-class [0.3737, 0.0, 0.5369] acc 0.4215
+saved results/tlob_h100_seq100_f40_wf-days1-4->day5.json + tlob_h100_seq100_f40_wf-days1-4->day5_test_preds.npz
+=== deeplob_h100_seq100_f40_wf-days1-4->day5 23:59:15 ===
+model=deeplob h=100 labels=classic seq=100 feats=40 stride=10 split=wf-days1-4->day5 epochs=3 lr=0.01
+windows: train=13092 val=1446 test=3630
+params: 143907
+epoch 0: train_loss=1.0123 val_macro_f1=0.3029 val_loss=1.0596 (243s elapsed)
+epoch 1: train_loss=0.9307 val_macro_f1=0.3174 val_loss=1.0418 (351s elapsed)
+epoch 2: train_loss=0.8454 val_macro_f1=0.3457 val_loss=1.0359 (455s elapsed)
+best val macro F1 0.3457 at epoch 2
+TEST macro F1 0.3089 per-class [0.5304, 0.0, 0.3961] acc 0.4262
+saved results/deeplob_h100_seq100_f40_wf-days1-4->day5.json + deeplob_h100_seq100_f40_wf-days1-4->day5_test_preds.npz
+=== tlob_h100_seq100_f40_wf-days1-5->day6 00:07:53 ===
+model=tlob h=100 labels=classic seq=100 feats=40 stride=10 split=wf-days1-5->day6 epochs=3 lr=0.0001
+windows: train=16367 val=1810 test=3630
+params: 579739
+epoch 0: train_loss=1.0280 val_macro_f1=0.2683 val_loss=1.0789 (267s elapsed)
+epoch 1: train_loss=0.9894 val_macro_f1=0.2938 val_loss=1.0591 (537s elapsed)
+epoch 2: train_loss=0.9429 val_macro_f1=0.3094 val_loss=1.0580 (815s elapsed)
+best val macro F1 0.3094 at epoch 2
+TEST macro F1 0.3077 per-class [0.4628, 0.0, 0.4605] acc 0.4019
+saved results/tlob_h100_seq100_f40_wf-days1-5->day6.json + tlob_h100_seq100_f40_wf-days1-5->day6_test_preds.npz
+=== deeplob_h100_seq100_f40_wf-days1-5->day6 00:22:31 ===
+model=deeplob h=100 labels=classic seq=100 feats=40 stride=10 split=wf-days1-5->day6 epochs=3 lr=0.01
+windows: train=16367 val=1810 test=3630
+params: 143907
+epoch 0: train_loss=1.0168 val_macro_f1=0.3158 val_loss=1.0663 (121s elapsed)
+epoch 1: train_loss=0.8900 val_macro_f1=0.2458 val_loss=1.0634 (258s elapsed)
+epoch 2: train_loss=0.7814 val_macro_f1=0.2905 val_loss=1.0636 (394s elapsed)
+best val macro F1 0.3158 at epoch 0
+TEST macro F1 0.2925 per-class [0.4952, 0.0, 0.3824] acc 0.3882
+saved results/deeplob_h100_seq100_f40_wf-days1-5->day6.json + deeplob_h100_seq100_f40_wf-days1-5->day6_test_preds.npz
+=== tlob_h100_seq100_f40_wf-days1-6->day7 00:30:00 ===
+model=tlob h=100 labels=classic seq=100 feats=40 stride=10 split=wf-days1-6->day7 epochs=3 lr=0.0001
+windows: train=19642 val=2174 test=3630
+params: 579739
+epoch 0: train_loss=1.0369 val_macro_f1=0.2566 val_loss=1.0852 (308s elapsed)
+epoch 1: train_loss=0.9957 val_macro_f1=0.2933 val_loss=1.0753 (634s elapsed)
+epoch 2: train_loss=0.9407 val_macro_f1=0.3212 val_loss=1.0799 (952s elapsed)
+best val macro F1 0.3212 at epoch 2
+TEST macro F1 0.2986 per-class [0.4827, 0.0058, 0.4073] acc 0.3879
+saved results/tlob_h100_seq100_f40_wf-days1-6->day7.json + tlob_h100_seq100_f40_wf-days1-6->day7_test_preds.npz
+=== deeplob_h100_seq100_f40_wf-days1-6->day7 00:46:56 ===
+model=deeplob h=100 labels=classic seq=100 feats=40 stride=10 split=wf-days1-6->day7 epochs=3 lr=0.01
+windows: train=19642 val=2174 test=3630
+params: 143907
+epoch 0: train_loss=1.0284 val_macro_f1=0.1779 val_loss=1.0893 (164s elapsed)
+epoch 1: train_loss=0.9319 val_macro_f1=0.3288 val_loss=1.0898 (322s elapsed)
+epoch 2: train_loss=0.8262 val_macro_f1=0.4106 val_loss=1.0754 (488s elapsed)
+best val macro F1 0.4106 at epoch 2
+TEST macro F1 0.4397 per-class [0.4112, 0.4715, 0.4363] acc 0.4397
+saved results/deeplob_h100_seq100_f40_wf-days1-6->day7.json + deeplob_h100_seq100_f40_wf-days1-6->day7_test_preds.npz
+=== convergence check: h=100, 8 epochs ===
+=== tlob_h100_seq100_f40_standard_8ep 00:55:59 ===
+model=tlob h=100 labels=classic seq=100 feats=40 stride=10 split=standard epochs=8 lr=0.0001
+windows: train=20371 val=5086 test=13949
+params: 579739
+epoch 0: train_loss=1.0426 val_macro_f1=0.2596 val_loss=1.0887 (345s elapsed)
+epoch 1: train_loss=1.0142 val_macro_f1=0.2829 val_loss=1.0857 (704s elapsed)
+epoch 2: train_loss=0.9776 val_macro_f1=0.3106 val_loss=1.0948 (1041s elapsed)
+epoch 3: train_loss=0.9307 val_macro_f1=0.3128 val_loss=1.0821 (1402s elapsed)
+epoch 4: train_loss=0.9014 val_macro_f1=0.4106 val_loss=1.0373 (1758s elapsed)
+epoch 5: train_loss=0.8849 val_macro_f1=0.4813 val_loss=0.9843 (2092s elapsed)

@@ -1,0 +1,30 @@
+=== full-recipe runs started Fri Nov 20 01:39:29 UTC 2026 ===
+=== (a) full recipe: 10 epochs, classic labels ===
+=== tlob_h100_seq128_f40_standard_10ep 01:39:29 ===
+model=tlob h=100 labels=classic seq=128 feats=40 stride=10 split=standard epochs=10 lr=0.0001
+windows: train=20368 val=5083 test=13946
+params: 887627
+epoch 0: train_loss=1.0480 val_macro_f1=0.1819 val_loss=1.0961 (449s elapsed)
+epoch 1: train_loss=1.0233 val_macro_f1=0.2941 val_loss=1.0951 (972s elapsed)
+epoch 2: train_loss=0.9861 val_macro_f1=0.2871 val_loss=1.1143 (1537s elapsed)
+epoch 3: train_loss=0.9371 val_macro_f1=0.3402 val_loss=1.0901 (2197s elapsed)
+epoch 4: train_loss=0.9105 val_macro_f1=0.4747 val_loss=1.0116 (2853s elapsed)
+epoch 5: train_loss=0.8885 val_macro_f1=0.5058 val_loss=0.9765 (3509s elapsed)
+epoch 6: train_loss=0.8724 val_macro_f1=0.5170 val_loss=0.9733 (4082s elapsed)
+epoch 7: train_loss=0.8563 val_macro_f1=0.5204 val_loss=0.9828 (4548s elapsed)
+epoch 8: train_loss=0.8459 val_macro_f1=0.5264 val_loss=0.9898 (5001s elapsed)
+epoch 9: train_loss=0.8249 val_macro_f1=0.5296 val_loss=0.9993 (5524s elapsed)
+best val macro F1 0.5296 at epoch 9
+TEST macro F1 0.5464 per-class [0.4993, 0.6286, 0.5114] acc 0.5429
+saved results/tlob_h100_seq128_f40_standard_10ep.json + tlob_h100_seq128_f40_standard_10ep_test_preds.npz
+=== deeplob_h100_seq100_f40_standard_10ep 03:14:24 ===
+model=deeplob h=100 labels=classic seq=100 feats=40 stride=10 split=standard epochs=10 lr=0.01
+windows: train=20371 val=5086 test=13949
+params: 143907
+epoch 0: train_loss=1.0303 val_macro_f1=0.2078 val_loss=1.0953 (233s elapsed)
+epoch 1: train_loss=0.9317 val_macro_f1=0.3073 val_loss=1.0979 (441s elapsed)
+epoch 2: train_loss=0.8172 val_macro_f1=0.3250 val_loss=1.0944 (671s elapsed)
+epoch 3: train_loss=0.7467 val_macro_f1=0.5017 val_loss=0.9875 (1169s elapsed)
+epoch 4: train_loss=0.6933 val_macro_f1=0.4062 val_loss=0.9793 (1509s elapsed)
+epoch 5: train_loss=0.6551 val_macro_f1=0.5866 val_loss=0.8831 (1952s elapsed)
+epoch 6: train_loss=0.6242 val_macro_f1=0.5824 val_loss=0.8586 (2395s elapsed)

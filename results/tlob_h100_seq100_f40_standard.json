@@ -1,0 +1,32 @@
+{
+  "model": "tlob",
+  "horizon": 100,
+  "seq_size": 100,
+  "n_features": 40,
+  "stride": 10,
+  "split": "standard",
+  "epochs": 3,
+  "batch": 32,
+  "lr": 0.0001,
+  "adam_eps": 1e-08,
+  "ema": true,
+  "seed": 1,
+  "n_params": 579739,
+  "train_windows": 20371,
+  "val_windows": 5086,
+  "test_windows": 13949,
+  "best_val_macro_f1": 0.3105514897617899,
+  "best_epoch": 2,
+  "test": {
+    "macro_f1": 0.28528343863700295,
+    "per_class_f1": [
+      0.41366426474512946,
+      0.001257071024512885,
+      0.44092898014136656
+    ],
+    "accuracy": 0.35472076851387196,
+    "loss": 1.1617804635828788,
+    "n": 13949
+  },
+  "seconds": 1458.3
+}

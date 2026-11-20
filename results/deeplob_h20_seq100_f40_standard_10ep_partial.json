@@ -1,0 +1,20 @@
+{
+  "tag": "deeplob_h20_seq100_f40_standard_10ep",
+  "model": "deeplob",
+  "horizon": 20,
+  "labels": "classic",
+  "seq_size": 100,
+  "n_features": 40,
+  "split": "standard",
+  "epochs_planned": 10,
+  "best_val_macro_f1": 0.2853142743162808,
+  "best_epoch": 0,
+  "val_history": [
+    {
+      "epoch": 0,
+      "train_loss": 1.0528563565137434,
+      "val_macro_f1": 0.2853142743162808,
+      "val_loss": 1.0796671850876238
+    }
+  ]
+}

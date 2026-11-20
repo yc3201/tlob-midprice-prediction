@@ -1,0 +1,12 @@
+=== chunk 4 started Fri Nov 20 08:39:22 UTC 2026 ===
+=== trading check: TLOB h=50 10ep ===
+tlob_h50_seq128_f40_standard_10ep_test_preds.npz: macro F1 0.5549 | spread proxy 0.00143 z | flip-rule model: 3737 trades, gross +0.092z, net -5.269z, win 0.21 | flip-rule oracle net -3.725z (3359 trades) | hold-5 model net -10.579z (7368 trades), oracle net -10.051z (7382 trades) | B&H +0.410z | signals below spread: 0.89 (n=7368)
+saved results/trading_h50_10ep_tlob.json
+=== tlob_h20_seq128_f40_standard_10ep 08:39:27 ===
+model=tlob h=20 labels=classic seq=128 feats=40 stride=10 split=standard epochs=10 lr=0.0001
+windows: train=20368 val=5083 test=13946
+params: 887627
+epoch 0: train_loss=1.0536 val_macro_f1=0.2310 val_loss=1.0484 (430s elapsed)
+epoch 1: train_loss=1.0416 val_macro_f1=0.2304 val_loss=1.0313 (874s elapsed)
+epoch 2: train_loss=1.0340 val_macro_f1=0.2310 val_loss=1.0209 (1333s elapsed)
+epoch 3: train_loss=1.0290 val_macro_f1=0.2310 val_loss=1.0114 (1788s elapsed)

@@ -1,0 +1,54 @@
+[
+  {
+    "run": "deeplob_h50_seq100_f40_standard_10ep_test_preds.npz",
+    "horizon": 50,
+    "latency_samples": 5,
+    "spread_proxy_mean_z": 0.0014344476087314766,
+    "macro_f1": 0.6335600402142348,
+    "n_test_windows": 13949,
+    "n_segments": 15,
+    "model": {
+      "round_trips": 3370,
+      "wins": 787,
+      "gross_pnl_z": 0.16892386999999803,
+      "net_pnl_z": -4.665164571425079,
+      "mean_gross_per_trade_z": 5.0125777448070635e-05,
+      "mean_net_per_trade_z": -0.001384321831283406,
+      "win_rate_net": 0.23353115727002968
+    },
+    "oracle_labels_as_signals": {
+      "round_trips": 3423,
+      "wins": 772,
+      "gross_pnl_z": 0.8939414699999937,
+      "net_pnl_z": -4.016172694687851,
+      "mean_gross_per_trade_z": 0.000261157309377737,
+      "mean_net_per_trade_z": -0.0011732902993537397,
+      "win_rate_net": 0.22553315804849547
+    },
+    "model_hold_matched": {
+      "round_trips": 7306,
+      "wins": 483,
+      "gross_pnl_z": 0.25132631499999325,
+      "net_pnl_z": -10.228747914392176,
+      "mean_gross_per_trade_z": 3.439998836572588e-05,
+      "mean_net_per_trade_z": -0.001400047620365751,
+      "win_rate_net": 0.0661100465370928
+    },
+    "oracle_hold_matched": {
+      "round_trips": 7368,
+      "wins": 471,
+      "gross_pnl_z": 0.4145332249999966,
+      "net_pnl_z": -10.154476756133525,
+      "mean_gross_per_trade_z": 5.6261295466883364e-05,
+      "mean_net_per_trade_z": -0.0013781863132645935,
+      "win_rate_net": 0.06392508143322476
+    },
+    "hold_samples": 5,
+    "buy_and_hold_gross_z": 0.41011662499999985,
+    "spread_clearing": {
+      "n_signals": 7306,
+      "frac_below_spread": 0.8702436353681905,
+      "mean_move_z": 0.0005692199965781555
+    }
+  }
+]

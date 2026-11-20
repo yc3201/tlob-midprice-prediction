@@ -1,0 +1,11 @@
+# FI-2010 raw data (897M, re-downloadable; not part of the repo)
+data/
+# Reference repo clone (read-only reference, not our code)
+reference-TLOB/
+# Model checkpoints and test predictions (large; JSON metrics are kept)
+*.pt
+results/*.npz
+# Execution scaffolding from the chunked runs
+run_chunk*.sh
+__pycache__/
+*.pyc

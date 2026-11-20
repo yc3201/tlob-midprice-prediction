@@ -1,0 +1,26 @@
+{
+  "model": "tlob",
+  "horizon": 100,
+  "labels": "tlob",
+  "seq_size": 128,
+  "n_features": 40,
+  "stride": 10,
+  "split": "standard",
+  "epochs": 10,
+  "batch": 32,
+  "test": {
+    "macro_f1": 0.2624407946902529,
+    "per_class_f1": [
+      0.0,
+      0.7864513039313857,
+      0.0008710801393728223
+    ],
+    "accuracy": 0.6479449106950721,
+    "loss": 1.014987167141853,
+    "n": 13941
+  },
+  "test_windows": 13941,
+  "evaluated_from_checkpoint": "results/tlob_h100_seq128_f40_standard_10ep_lab-tlob_best.pt",
+  "best_val_macro_f1": 0.21155789455520016,
+  "best_epoch": 0
+}

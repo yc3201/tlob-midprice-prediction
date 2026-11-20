@@ -1,0 +1,25 @@
+=== chunk 6b started Fri Nov 20 13:15:51 UTC 2026 ===
+=== eval killed lab-tlob h=100 checkpoint (epoch 0) ===
+model=tlob h=100 labels=tlob seq=128 feats=40 stride=10 split=standard epochs=10 lr=0.0001
+windows: train=20368 val=5082 test=13941
+params: 887627
+CHECKPOINT TEST macro F1 0.2624 per-class [0.0, 0.7865, 0.0009] acc 0.6479
+saved results/tlob_h100_seq128_f40_standard_10ep_lab-tlob_partial-eval.json + tlob_h100_seq128_f40_standard_10ep_lab-tlob_partial-eval_test_preds.npz
+=== tlob_h100_seq128_f40_standard_10ep_lab-tlob 13:19:16 ===
+model=tlob h=100 labels=tlob seq=128 feats=40 stride=10 split=standard epochs=10 lr=0.0001
+windows: train=20368 val=5082 test=13941
+params: 887627
+epoch 0: train_loss=1.0364 val_macro_f1=0.2116 val_loss=1.0664 (467s elapsed)
+epoch 1: train_loss=1.0235 val_macro_f1=0.2110 val_loss=1.0517 (908s elapsed)
+epoch 2: train_loss=1.0083 val_macro_f1=0.2110 val_loss=1.0391 (1381s elapsed)
+epoch 3: train_loss=0.9944 val_macro_f1=0.2111 val_loss=1.0311 (1843s elapsed)
+epoch 4: train_loss=0.9833 val_macro_f1=0.2595 val_loss=1.0246 (2323s elapsed)
+epoch 5: train_loss=0.9701 val_macro_f1=0.3208 val_loss=1.0141 (2766s elapsed)
+epoch 6: train_loss=0.9568 val_macro_f1=0.3666 val_loss=1.0062 (3228s elapsed)
+epoch 7: train_loss=0.9455 val_macro_f1=0.3878 val_loss=1.0061 (3712s elapsed)
+epoch 8: train_loss=0.9351 val_macro_f1=0.3910 val_loss=1.0214 (4193s elapsed)
+epoch 9: train_loss=0.9225 val_macro_f1=0.3994 val_loss=1.0345 (4664s elapsed)
+best val macro F1 0.3994 at epoch 9
+TEST macro F1 0.4350 per-class [0.2943, 0.7612, 0.2494] acc 0.6224
+saved results/tlob_h100_seq128_f40_standard_10ep_lab-tlob.json + tlob_h100_seq128_f40_standard_10ep_lab-tlob_test_preds.npz
+=== CHUNK 6b DONE Fri Nov 20 14:39:51 UTC 2026 ===
